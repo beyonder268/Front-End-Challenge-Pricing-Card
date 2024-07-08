@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebDev Community</title>
+  <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+</head>
+<body>
+  <div id="card">
+    <div id="top">
+      <h2>Welcome to our community</h2>
+      <h4>30 day hassle free money back.</h4>
+      <p>Gain access to our full library of tutorials along with expert code reviews.</p>
+    </div>
+    <div id="bottom-section">
+    <div id="bottom-left">
+      <h4>Monthly subscription</h4>
+      <div id="pc">
+        <div id="price">29$</div>
+        <div id="pf">per month</div>
+      </div>
+      <p>Full access for 1$</p>
+      <button onclick="alertUser()">Sign up</button>
+    </div><div id="bottom-right">
+      <h4>Why us</h4>
+      <ul>
+        <li>Tutorials by experts</li>
+        <li>Peer and expert code review</li>
+        <li>Access to our github repos</li>
+        <li>Unlimited support</li>
+        <li>Faithful community</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</body>
+<style type="text/css">
+  html{
+    box-sizing: border-box;
+    font-family: 'Karla';
+    font-size: 16px;
+    font-weight: 400;
+  }
+  *, *:before, *:after{
+    box-sizing: inherit;
+  }
+  body{
+    padding: 20px;
+  }
+  h2,h4,p{
+    margin: 0;
+  }
+  #top h2{
+    color: #2ab2af;
+    margin-bottom: 15px;
+  }
+   #top h4{
+    color: #d9df34;
+    margin-bottom: 10px;
+  }
+   #top p{
+    color: #98a6bd;
+    margin-bottom: 10px;
+  }
+  #card{
+    width: 600px;
+    height: 400px;
+    box-shadow: 3px 2px 5px 3px rgba(0,0,0,0.31);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  #top{
+    width: 100%;
+    height: 45%;
+    padding: 25px;
+    background-color: #f2f7f5;
+  }
+  #bottom-section{
+      width: 100%;
+    height: 55%;
+    color: white;
+  }
+  #bottom-left{
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background-color: #6942f5;
+    padding: 20px;
+  }
+  #bottom-right{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background-color: #9042f5;
+    padding: 20px;
+  }
+  button{
+    color: white;
+    background-color: #30d17e;
+    border: none;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    box-shadow: px 2px 5px 3px rgba(0,0,0,0.40);
+    font-weight :700;
+  }
+  button:hover{
+    cursor: pointer;
+    background-color: #42f560;
+    transform: scale(1.02);
+  }
+  #price{
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  #bottom-left h4{
+    margin-bottom: 15px;
+  }
+  #bottom-left p{
+    font-size: 0.9rem;
+    margin-bottom: 35px;
+  }
+  #pf,#price{
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  #pf{
+    position: relative;
+    top: -3px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-left: 5px;
+  }
+  ul{
+    padding: 0;
+    list-style: none;
+    font-size: .9rem;
+    opacity: .8;
+  }
+</style>
+<script type="text/javascript">
+  function alertUser () {
+    alert('you clicked the button');
+  }
+</script>
+</html>
